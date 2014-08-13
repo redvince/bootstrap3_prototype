@@ -1,0 +1,71 @@
+<!-- Top Nav -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+   <div class="container-fluid">
+
+      <div class="col-xs-3 text-center smallText">
+         <a href="justU.html"><img src="images/justUTrans.gif" alt="justU Logo" class="smallLogo"></a>
+      </div>
+
+      <div class="col-xs-3 col-xs-offset-6 text-center">
+         <button type="button" class="navbar-toggle navbar-link customToggle glyphicon glyphicon-cog mediumGlyphicon" data-toggle="collapse" data-target="#navbarCollapse">
+         </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+         <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="glyphicon glyphicon-user"></i> JustU <b class="caret"></b>
+               </a>
+               <ul class="dropdown-menu">
+                 <li><a href="profile.html">Profile</a></li>
+                 <li data-toggle="modal" data-target="#myModal"><a href="#">Log out</a></li>
+               </ul>
+            </li>  
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="glyphicon glyphicon-info-sign"></i> Help <b class="caret"></b>
+               </a>
+               <ul class="dropdown-menu">
+                  <form class="navbar-form" role="search">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Help" name="srch-term" id="srch-term">
+                        <div class="input-group-btn">
+                           <button class="btn btn-default" id ="searchHelp" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                     </div>
+                  </form>
+                  <li class="divider"></li>
+                  <li><a href="help.html">How To Guide</a></li>
+               </ul>
+            </li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="glyphicon glyphicon-cog"></i> Settings <b class="caret"></b>
+               </a>
+               <ul class="dropdown-menu">
+                 <li><a href="accounts.html">Manage Accounts</a></li>
+                 <li><a href="feedSettings.html">Social Feeds</a></li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+   </div>
+</nav>
+<!-- Script to apply active classes to items that match the URL -->
+<script>
+   var url = window.location.pathname; 
+   var activePage = url.substring(url.lastIndexOf('/') + 1); 
+   //checks a tags in lists and applies active to lists, the parent of a
+   $(".navbar li a").each(function () { 
+      var linkPage = this.href.substring(this.href.lastIndexOf('/') + 1); 
+      if (activePage == linkPage) { 
+         $(this).parent().addClass("active"); 
+      }
+   });
+   //redirect to help page when search submitted
+   $("#searchHelp").click(function(e){
+      e.preventDefault();
+      document.location.href="help.html";
+   });
+ </script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>JustU Calendar</title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/myStyle.css" rel="stylesheet">
+      <!-- Css for datepicker calendar-->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+   </head>
+   <body class="appPages">
+      <!-- Load Navs-->
+      <div id="includeNavTop"></div>
+      <div id="includeNavBottom"></div>
+      <div id="includeModal"></div>
+
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xs-offset-4 col-xs-4 text-center">
+               <h3>JustU Calendar</h3>
+            </div>
+         </div>
+         <!-- UI Calendar-->
+         <div class="row">
+            <div class="datepickerDiv" id="datepicker"></div>
+            <script>
+               window.onload = function() {
+                  $("#datepicker").datepicker();
+               };
+            </script>
+         </div>
+         <div class="row">
+            <div class="col-xs-offset-4 col-xs-4 text-center whiteSpace">
+               <p><br>Keeping you up to date with all your social sites' events.</p>
+            </div>
+         </div>
+      </div>
+
+   
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="js/myQuery.js"></script>
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   </body>
+</html>
