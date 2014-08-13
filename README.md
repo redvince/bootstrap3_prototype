@@ -4,9 +4,11 @@ bootstrap3_prototype
 Web App Prototype Built using Bootstrap 3 and jQuery.
 
 JavaScript files written for the assignment:
+
 	/js/myQuery.js
 
 CSS files written for the assignment:
+
 	/css/myStyle
 
 All HTML files written for the assignment.
