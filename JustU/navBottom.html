@@ -1,35 +1,35 @@
 <!-- Bottom Nav-->
 <nav class="navbar navbar-custom navbar-fixed-bottom" role="navigation" id="bottom">
 
-   <div class="container-fluid">
-      <div class="col-xs-3 text-center smallText">
-      <a href="feeds.html" class="navbar-link"><i class="glyphicon glyphicon-list-alt largeGlyphicon"></i></br>Feeds</a>
-   </div>
+	<div class="container-fluid">
+		<div class="col-xs-3 text-center smallText">
+			<a href="feeds.html" class="navbar-link"><i class="glyphicon glyphicon-list-alt largeGlyphicon"></i></br>Feeds</a>
+		</div>
 
-   <div class="col-xs-3 text-center smallText">
-     <a href="publish.html" class="navbar-link"><i class="glyphicon glyphicon-edit largeGlyphicon"></i></br>Publish</a>
-   </div>
+		<div class="col-xs-3 text-center smallText">
+			<a href="publish.html" class="navbar-link"><i class="glyphicon glyphicon-edit largeGlyphicon"></i></br>Publish</a>
+		</div>
 
-   <div class="col-xs-3 text-center smallText">
-     <a href="mail.html" class="navbar-link"><i class="glyphicon glyphicon-envelope largeGlyphicon"></i></br>Mail</a>
-   </div>
+		<div class="col-xs-3 text-center smallText">
+			<a href="mail.html" class="navbar-link"><i class="glyphicon glyphicon-envelope largeGlyphicon"></i></br>Mail</a>
+		</div>
 
-   <div class="col-xs-3 text-center smallText">
-     <a href="calendar.html" class="navbar-link"><i class="glyphicon glyphicon-calendar largeGlyphicon"></i></br>Calendar</a>
-   </div>
- </div>
+		<div class="col-xs-3 text-center smallText">
+			<a href="calendar.html" class="navbar-link"><i class="glyphicon glyphicon-calendar largeGlyphicon"></i></br>Calendar</a>
+		</div>
+	</div>
 </nav>
 
 <!-- Script to apply active classes to items that match the URL -->
 <script type="text/javascript">
-   var url = window.location.pathname; 
-   var activePage = url.substring(url.lastIndexOf('/') + 1); 
-   //checks a tags
-   $("#bottom a").each(function () { 
-      var linkPage = this.href.substring(this.href.lastIndexOf('/') + 1); 
-      if (activePage == linkPage) { 
-         $(this).parent().addClass("active-col");
-         $(this).addClass("navbar-link-active"); 
-      }
-   });
+	var url = window.location.pathname; 
+	var activePage = url.substring(url.lastIndexOf('/') + 1); 
+	//checks a tags
+	$("#bottom a").each(function () { 
+		var linkPage = this.href.substring(this.href.lastIndexOf('/') + 1); 
+		if (activePage == linkPage) { 
+			$(this).parent().addClass("active-col");
+			$(this).addClass("navbar-link-active"); 
+		}
+	});
 </script>
